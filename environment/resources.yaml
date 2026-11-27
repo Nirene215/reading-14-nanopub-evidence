@@ -1,0 +1,22 @@
+# This manifest describes this skill's resources, NOT the evaluator's pinned image.
+schema_version: "1.0"
+skill_version: "1.0.0"
+runtime:
+  python: ">=3.10"
+  required_packages: []
+optional_dependencies:
+  - name: pypdf
+    purpose: "Extract actual PDF text; no OCR. TXT/Markdown need only Python stdlib."
+    tested_version: "6.21.4"
+    install_if_needed: "python -m pip install pypdf==6.21.4"
+    source: "https://pypi.org/project/pypdf/6.21.4/"
+    license: "BSD-3-Clause (third-party package, not bundled)"
+bundled_files:
+  # Relative to THIS directory, not the current working directory.
+  - "../scripts/nanopub.py"
+  - "../references/schema.md"
+  - "../references/method.md"
+  - "../references/teaching-examples.md"
+network_required: false
+api_key_required: false
+notes: "Consult the platform's actual environment/resources.yaml separately for pinned paths. No preinstalled runtime path is asserted here."

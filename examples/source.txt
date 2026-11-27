@@ -1,0 +1,5 @@
+SYNTHETIC TEACHING MATERIAL. This is not a real paper or an official evaluation case.
+
+In a synthetic experiment with 40 simulated samples, method A reduced median runtime from 10 ms to 8 ms compared with method B on dataset D.
+
+On the same dataset D, the accuracy difference between method A and method B was not statistically significant (p = 0.31).
